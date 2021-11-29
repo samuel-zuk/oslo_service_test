@@ -104,7 +104,7 @@ def wrap(conf, sock):
     # NOTE(eezhova): SSL/TLS protocol version is injected in ssl_kwargs above,
     # so skipping bandit check
     LOG.debug(ssl_kwargs)
-    breakpoint(reverse=True, term_size=(190,47))
+    # breakpoint(reverse=True, term_size=(190,47))
     return ssl.wrap_socket(sock, **ssl_kwargs)  # nosec
 
     """
